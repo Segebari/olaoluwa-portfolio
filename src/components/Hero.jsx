@@ -21,9 +21,9 @@ const Hero = () => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row pl-24 pt-36 pb-40">
+      <div className="flex flex-col md:flex-row md:pl-24 pt-36 pb-40 px-5 text-center">
         <div className="">
-          <div className="w-52 relative">
+          <div className="md:w-52 relative pb-32 md:pb-0">
             <div className="h-56 w-44" style={backgroundStyle}></div>
             <div
               className=" h-56 w-44 absolute top-24 left-8"
@@ -31,21 +31,21 @@ const Hero = () => {
             ></div>
           </div>
         </div>
-        <div className="pl-10 max-w-3xl">
+        <div className="md:pl-10 md:max-w-3xl">
           <div className="relative">
             <h3 className="text-4xl text-textgrey relative z-10">
               I AM OLAOLUWA A SOFTWARE DEVELOPER
             </h3>
-            <img src={HeroIcon} alt="" className="absolute top-[-3.75rem] right-[0rem]" />
+            <img src={HeroIcon} alt="" className="absolute top-[-22rem] md:top-[-3.75rem] right-[0rem]" />
           </div>
 
-          <p className="text-2xl pt-3 pr-24">
+          <p className="text-2xl pt-3 md:pr-24">
             Enthusiastic professional with 7 years of experience, driven by new
             challenges, creative solutions, and building connections. Currently
             a Senior Full Stack Web3 Engineer at{" "}
             <span className="hover:text-navhover">Masqbrowser.</span>
           </p>
-          <div className="flex flex-col md:flex-row mt-5 gap-10">
+          <div className="flex flex-col md:flex-row mt-5 gap-10 items-center md:items-start">
             <button className="flex items-center gap-3 w-48 h-16 bg-buttonbgdark justify-center text-[1.6rem] text-textgrey border border-dotted rounded-xl">
               Get my cv <FiArrowUpRight />
             </button>

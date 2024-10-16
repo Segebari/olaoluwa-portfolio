@@ -4,7 +4,7 @@ import { FiMenu, FiX } from "react-icons/fi"; // Importing Feather Icons
 
 const MobileNav = ({ isOpen, toggleMenu }) => {
   return (
-    <div className={`md:hidden w-full z-50 border-b border-navb bg-white h-16 fixed top-1`}>
+    <div className={`md:hidden w-full z-50 border-b border-navb bg-white h-16 fixed top-0`}>
       <div className="flex justify-between items-center h-full pl-4">
         {/* Hamburger menu icon */}
         <button onClick={toggleMenu}>
