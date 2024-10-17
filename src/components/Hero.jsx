@@ -41,12 +41,12 @@ const Hero = () => {
 
   return (
     <>
-      <div
-        className="flex flex-col md:flex-row md:pl-24 pt-36 pb-20 md:pb-40 px-5 text-center items-center"
-        onMouseEnter={handleHover}
-        onMouseLeave={handleMouseLeave}
-      >
-        <div className="">
+      <div className="flex flex-col md:flex-row md:pl-24 pt-36 pb-20 md:pb-40 px-5 text-center items-center">
+        <div
+          className=""
+          onMouseEnter={handleHover}
+          onMouseLeave={handleMouseLeave}
+        >
           <div className="md:w-52 relative pb-32 md:pb-0">
             <div className="h-56 w-44 frontImage" style={backgroundStyle}></div>
             <div

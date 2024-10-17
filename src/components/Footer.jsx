@@ -27,7 +27,7 @@ const Footer = () => {
             <div
               className=" h-56 w-44 absolute top-24 left-8"
               style={backgroundStyle2}
-            ></div>
+            ></div> 
           </div>
         </div>
         <div className="flex flex-col mt-5 gap-10">

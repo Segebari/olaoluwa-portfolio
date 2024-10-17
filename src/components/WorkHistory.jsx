@@ -14,7 +14,7 @@ const WorkHistory = () => {
 
         <div className="mt-10 w-[90%] md:w-[80%] mx-auto">
           <div className="flex flex-col md:flex-row gap-5">
-            <div className="border-4 bg-white border-dotted border-workborder p-3 rounded-2xl md:w-1/2">
+            <div className="border-2 md:border-4 bg-white border-dotted border-workborder p-3 rounded-2xl md:w-1/2">
               <div className="flex justify-between">
                 <div>
                   <h4 className="text-lg font-medium">
@@ -46,7 +46,7 @@ const WorkHistory = () => {
                 </p>
               </div>
             </div>
-            <div className="border-4 bg-white border-dotted border-workborder rounded-2xl p-3 md:w-1/2">
+            <div className="border-2 md:border-4 bg-white border-dotted border-workborder rounded-2xl p-3 md:w-1/2">
               <div className="flex justify-between">
                 <div>
                   <h4 className="text-lg font-medium">
@@ -79,7 +79,7 @@ const WorkHistory = () => {
           </div>
 
           <div className="flex flex-col md:flex-row gap-5 mt-10">
-            <div className="border-4 bg-white border-dotted border-workborder p-3 rounded-2xl md:w-1/2">
+            <div className="border-2 md:border-4 bg-white border-dotted border-workborder p-3 rounded-2xl md:w-1/2">
               <div className="flex justify-between">
                 <div>
                   <h4 className="text-lg font-medium">
@@ -109,7 +109,7 @@ const WorkHistory = () => {
                 </p>
               </div>
             </div>
-            <div className="border-4 bg-white border-dotted border-workborder rounded-2xl p-3 md:w-1/2">
+            <div className="border-2 md:border-4 bg-white border-dotted border-workborder rounded-2xl p-3 md:w-1/2">
               <div className="flex justify-between">
                 <div>
                   <h4 className="text-lg font-medium">
@@ -139,7 +139,7 @@ const WorkHistory = () => {
               </div>
             </div>
           </div>
-          <div className="border-4 bg-white border-dotted md:h-80 border-workborder p-3 md:p-7 rounded-2xl mt-10">
+          <div className="border-2 md:border-4 bg-white border-dotted md:h-80 border-workborder p-3 md:p-7 rounded-2xl mt-10">
             <div className="flex flex-col md:flex-row gap-5">
               <div className="md:w-[30%] flex flex-row md:flex-col">
                 <div className="">
