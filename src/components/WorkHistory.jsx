@@ -1,21 +1,20 @@
 import React from "react";
 import WorkVector from "../assets/work-vector.svg";
 
-
 const WorkHistory = () => {
   return (
     <>
-      <div className=" pt-20 bg-worksectionbg">
-        <div className="pl-24 text-3xl relative w-fit">
+      <div className="flex flex-col pt-20 bg-worksectionbg">
+        <div className="mx-auto md:text-start md:pl-24 text-3xl relative w-fit">
           Work History
           <div className="absolute top-[-1rem] right-[-2rem]">
             <img src={WorkVector} alt="" />
           </div>
         </div>
 
-        <div className="mt-10 w-[80%] mx-auto">
-          <div className="flex gap-5">
-            <div className="border-4 bg-white border-dotted border-workborder p-3 rounded-2xl w-1/2">
+        <div className="mt-10 w-[90%] md:w-[80%] mx-auto">
+          <div className="flex flex-col md:flex-row gap-5">
+            <div className="border-4 bg-white border-dotted border-workborder p-3 rounded-2xl md:w-1/2">
               <div className="flex justify-between">
                 <div>
                   <h4 className="text-lg font-medium">
@@ -47,7 +46,7 @@ const WorkHistory = () => {
                 </p>
               </div>
             </div>
-            <div className="border-4 bg-white border-dotted border-workborder rounded-2xl p-3 w-1/2">
+            <div className="border-4 bg-white border-dotted border-workborder rounded-2xl p-3 md:w-1/2">
               <div className="flex justify-between">
                 <div>
                   <h4 className="text-lg font-medium">
@@ -79,8 +78,8 @@ const WorkHistory = () => {
             </div>
           </div>
 
-          <div className="flex gap-5 mt-10">
-            <div className="border-4 bg-white border-dotted border-workborder p-3 rounded-2xl w-1/2 ">
+          <div className="flex flex-col md:flex-row gap-5 mt-10">
+            <div className="border-4 bg-white border-dotted border-workborder p-3 rounded-2xl md:w-1/2">
               <div className="flex justify-between">
                 <div>
                   <h4 className="text-lg font-medium">
@@ -110,7 +109,7 @@ const WorkHistory = () => {
                 </p>
               </div>
             </div>
-            <div className="border-4 bg-white border-dotted border-workborder rounded-2xl p-3 w-1/2">
+            <div className="border-4 bg-white border-dotted border-workborder rounded-2xl p-3 md:w-1/2">
               <div className="flex justify-between">
                 <div>
                   <h4 className="text-lg font-medium">
@@ -140,16 +139,21 @@ const WorkHistory = () => {
               </div>
             </div>
           </div>
-          <div className="border-4 bg-white border-dotted h-80 border-workborder p-7 rounded-2xl mt-10">
-            <div className="flex gap-5">
-              <div className="w-[30%]">
-                <h4 className="text-lg font-medium">Full-stack Developer</h4>
-                <p className="text-workgrey">JCP NETCONSULT Limited, Nigeria</p>
+          <div className="border-4 bg-white border-dotted md:h-80 border-workborder p-3 md:p-7 rounded-2xl mt-10">
+            <div className="flex flex-col md:flex-row gap-5">
+              <div className="md:w-[30%] flex flex-row md:flex-col">
+                <div className="">
+                  <h4 className="text-lg font-medium">Full-stack Developer</h4>
+                  <p className="text-workgrey">
+                    JCP NETCONSULT Limited, Nigeria
+                  </p>
+                </div>
+
                 <div className="text-sm bg-[#EFEEDD] px-3 w-fit h-14 grid place-items-center rounded-xl">
                   May 2017 - May 2021
                 </div>
               </div>
-              <div className="w-[70%] text-xl">
+              <div className="md:w-[70%] text-xl">
                 Developed a web application to handle industrial requests as a
                 full-stack developer Integrated Rest API with the React frontend
                 Integrated PHP and MySql Rest APIs with the React Frontend and
