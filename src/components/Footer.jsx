@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <>
       <div className="h-screen flex flex-col md:flex-row justify-center items-center gap-10 p-20 bg-gradient-to-b from-[#D6F8FF] to-[#00C8F000] mt-20">
-        <div className="">
+        <div className="hidden md:block">
           <div className="w-52 relative">
             <div className="h-56 w-44" style={backgroundStyle}></div>
             <div
@@ -40,8 +40,8 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      <div className='flex pb-10'>
-        <div className="text-2xl mx-auto">Olaoluwa ©2024All Rights Reserved</div>
+      <div className='flex pb-10 text-center '>
+        <div className="md:text-2xl mx-auto">Olaoluwa ©2024All Rights Reserved</div>
       </div>
     </>
   );
