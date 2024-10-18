@@ -27,12 +27,15 @@ const Footer = () => {
             <div
               className=" h-56 w-44 absolute top-24 left-8"
               style={backgroundStyle2}
-            ></div> 
+            ></div>
           </div>
         </div>
         <div className="flex flex-col mt-5 gap-10">
           <button className="flex items-center gap-3 w-48 h-16 bg-buttonbgdark justify-center text-[1.6rem] text-textgrey border border-dotted rounded-xl">
-            Get my cv <FiArrowUpRight />
+            Get my cv{" "}
+            <div className="relative bottom-[-0.1rem]">
+              <FiArrowUpRight />
+            </div>
           </button>
           <button className="w-48 h-16 bg-gradient-to-b from-buttonbglightblue to-buttonbgblue text-[1.5rem] rounded-xl text-white border border-dotted">
             {" "}
@@ -40,8 +43,10 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      <div className='flex pb-10 text-center '>
-        <div className="md:text-2xl mx-auto">Olaoluwa ©2024All Rights Reserved</div>
+      <div className="flex pb-10 text-center ">
+        <div className="md:text-2xl mx-auto">
+          Olaoluwa ©2024All Rights Reserved
+        </div>
       </div>
     </>
   );

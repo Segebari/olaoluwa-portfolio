@@ -57,7 +57,7 @@ const Hero = () => {
         </div>
         <div className="md:pl-10 md:max-w-3xl">
           <div className="relative">
-            <h3 className="text-4xl text-textgrey relative z-10">
+            <h3 className="text-2xl md:text-4xl text-textgrey relative z-10">
               I AM OLAOLUWA A SOFTWARE DEVELOPER
             </h3>
             <img
@@ -67,7 +67,7 @@ const Hero = () => {
             />
           </div>
 
-          <p className="text-2xl pt-3 md:pr-24">
+          <p className="text-lg md:text-2xl pt-3 md:pr-24">
             Enthusiastic professional with 7 years of experience, driven by new
             challenges, creative solutions, and building connections. Currently
             a Senior Full Stack Web3 Engineer at{" "}
@@ -75,7 +75,10 @@ const Hero = () => {
           </p>
           <div className="flex flex-col md:flex-row mt-5 gap-10 items-center md:items-start">
             <button className="flex items-center gap-3 w-48 h-16 bg-buttonbgdark justify-center text-[1.6rem] text-textgrey border border-dotted rounded-xl">
-              Get my cv <FiArrowUpRight />
+              Get my cv{" "}
+              <div className="relative bottom-[-0.1rem]">
+                <FiArrowUpRight />
+              </div>
             </button>
             <button className="w-48 h-16 bg-gradient-to-b from-buttonbglightblue to-buttonbgblue text-[1.5rem] rounded-xl text-white border border-dotted">
               {" "}
