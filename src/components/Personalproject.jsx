@@ -7,8 +7,8 @@ const Personalproject = () => {
   return (
     <>
       <div className="w-[90%] md:w-[80%] mx-auto mt-10 mb-10">
-        <div className="flex flex-col md:flex-row gap-5">
-          <h2 className="text-2xl text-center md:text-start md:text-4xl">
+        <div className="flex flex-col lg:flex-row gap-5 items-center">
+          <h2 className="text-2xl md:text-3xl xl:text-4xl md:text-start text-center ">
             Personal Project
           </h2>
           <div className="logo-slider2">
@@ -18,7 +18,7 @@ const Personalproject = () => {
                   <img
                     src={logo}
                     alt=""
-                    className="w-auto h-full object-contain"
+                    className="w-auto h-full object-contain pl-4"
                   />
                 </div>
               ))}
