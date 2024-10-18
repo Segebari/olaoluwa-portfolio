@@ -5,7 +5,7 @@ const WorkHistory = () => {
   return (
     <>
       <div className="flex flex-col pt-20 bg-worksectionbg">
-        <div className="mx-auto md:text-start md:pl-24 text-3xl relative w-fit">
+        <div className="mx-auto md:mx-0 md:pl-24 text-3xl relative w-fit">
           Work History
           <div className="absolute top-[-1rem] right-[-2rem]">
             <img src={WorkVector} alt="" />
@@ -112,18 +112,18 @@ const WorkHistory = () => {
             <div className="border-2 md:border-4 bg-white border-dotted border-workborder rounded-2xl p-3 md:w-1/2">
               <div className="flex justify-between">
                 <div>
-                  <h4 className="text-lg font-medium">
+                  <h4 className="text-xl font-medium">
                     Web3 Front-end Developer
                   </h4>
                   <p className="text-workgrey">
                     Payvest, Nigeria(biko-fund.web)
                   </p>
                 </div>
-                <div className="text-sm bg-[#EFEEDD] px-3 h-14 grid place-items-center rounded-xl">
+                <div className="text-sm font-medium bg-[#EFEEDD] px-3 h-14 grid place-items-center rounded-xl">
                   May 2021 - Sept 2021
                 </div>
               </div>
-              <div>
+              <div className="text-base lg:text-lg">
                 <p className="pt-5">
                   Built a crowd funding application with Vue.js and Material UI.
                   Managed the data using Vuex by working on Node.js APIs to
@@ -149,11 +149,11 @@ const WorkHistory = () => {
                   </p>
                 </div>
 
-                <div className="text-sm bg-[#EFEEDD] px-3 w-fit h-14 grid place-items-center rounded-xl">
+                <div className="text-sm mt-5 bg-[#EFEEDD] px-3 w-fit h-14 grid place-items-center rounded-xl">
                   May 2017 - May 2021
                 </div>
               </div>
-              <div className="md:w-[70%] text-xl">
+              <div className="md:w-[70%] text-base lg:text-2xl">
                 Developed a web application to handle industrial requests as a
                 full-stack developer Integrated Rest API with the React frontend
                 Integrated PHP and MySql Rest APIs with the React Frontend and

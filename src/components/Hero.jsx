@@ -41,7 +41,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row md:pl-24 pt-36 pb-20 md:pb-40 px-5 text-center items-center">
+      <div className="flex flex-col md:flex-row md:pl-20 xl:pl-24 pt-36 pb-20 md:pb-40 px-5 items-center">
         <div
           className=""
           onMouseEnter={handleHover}
@@ -55,19 +55,19 @@ const Hero = () => {
             ></div>
           </div>
         </div>
-        <div className="md:pl-10 md:max-w-3xl">
+        <div className="md:pl-10 md:max-w-3xl text-center md:text-start">
           <div className="relative">
-            <h3 className="text-2xl md:text-4xl text-textgrey relative z-10">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl text-textgrey relative z-10">
               I AM OLAOLUWA A SOFTWARE DEVELOPER
             </h3>
             <img
               src={HeroIcon}
               alt=""
-              className="absolute top-[-22rem] md:top-[-3.75rem] right-[0rem]"
+              className="absolute top-[-22rem] md:top-[-3.75rem] hidden md:block md:right-[0rem]"
             />
           </div>
 
-          <p className="text-lg md:text-2xl pt-3 md:pr-24">
+          <p className="text-lg sm:text-xl xl:text-2xl md:text-start sm:px-10 md:px-0  pt-3 md:pr-24">
             Enthusiastic professional with 7 years of experience, driven by new
             challenges, creative solutions, and building connections. Currently
             a Senior Full Stack Web3 Engineer at{" "}
