@@ -6,15 +6,15 @@ import { FiArrowUpRight } from "react-icons/fi";
 const Personalproject = () => {
   return (
     <>
-      <div className="w-[90%] md:w-[80%] mx-auto mt-10">
+      <div className="w-[90%] md:w-[80%] mx-auto mt-10 mb-10">
         <div className="flex flex-col md:flex-row gap-5">
           <h2 className="text-2xl text-center md:text-start md:text-4xl">
             Personal Project
           </h2>
           <div className="logo-slider2">
-            <div className="logo-slide-track">
+            <div className="logo-slide-track2">
               {[thiscreete, zues, thiscreete, zues].map((logo, index) => (
-                <div key={index} className="logo-slide">
+                <div key={index} className="logo-slide2">
                   <img
                     src={logo}
                     alt=""
@@ -97,13 +97,13 @@ const Personalproject = () => {
           padding: 0 20px;
         }
 
-        .logo-slide-track {
+        .logo-slide-track2 {
           display: flex;
           width: calc(150px * 4);
           animation: slide 10s linear infinite;
         }
 
-        .logo-slide {
+        .logo-slide2 {
           width: 150px;
           height: 60px;
           display: flex;
