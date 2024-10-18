@@ -6,7 +6,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 const Personalproject = () => {
   return (
     <>
-      <div className="w-[90%] md:w-[80%] mx-auto mt-10 mb-10">
+      <div className="w-[90%] md:w-[80%] mx-auto mt-10 mb-10 overflow-hidden">
         <div className="flex flex-col lg:flex-row gap-5 items-center">
           <h2 className="text-2xl md:text-3xl xl:text-4xl md:text-start text-center ">
             Personal Project
