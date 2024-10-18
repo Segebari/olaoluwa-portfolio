@@ -13,7 +13,7 @@ const About = () => {
             <p className="text-red-500">
               Friday, Sep 27, 2024 <br /> 10:30:12 AM
             </p>
-            <h2 className="text-4xl font-bold">About me</h2>
+            <h2 className="text-4xl font-bold pt-3">About me</h2>
             <p className="text-[#888888] pt-5">
               I'm a passionate professional with 7+ years of experience as a
               senior web3 frontend developer, specializing in blockchain
