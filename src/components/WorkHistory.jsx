@@ -1,20 +1,27 @@
 import React from "react";
 import WorkVector from "../assets/work-vector.svg";
+// logos
+import masq from "../assets/masq.svg";
+import jcp from "../assets/jcp.svg";
+import monkey from "../assets/monkeydoo.svg";
+import unifty from "../assets/unifty.svg";
+import naffiti from "../assets/naffiti.svg";
+
 
 const WorkHistory = () => {
   return (
     <>
       <div className="flex flex-col pt-20 bg-worksectionbg">
-        <div className="mx-auto md:mx-0 md:pl-24 text-3xl relative w-fit">
+        <div className="mx-auto lg:mx-0 lg:pl-24 text-3xl relative w-fit">
           Work History
           <div className="absolute top-[-1rem] right-[-2rem]">
             <img src={WorkVector} alt="" />
           </div>
         </div>
 
-        <div className="mt-10 w-[90%] md:w-[80%] mx-auto">
-          <div className="flex flex-col md:flex-row gap-5">
-            <div className="border-2 md:border-4 bg-white border-dotted border-workborder p-3 rounded-2xl md:w-1/2">
+        <div className="mt-10 w-[90%] md:w-[90%] lg:w-[80%] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-5">
+            <div className="border group bg-white hover:bg-worklightblue  border-dotted border-workborder hover:border-workblue p-3 rounded-2xl lg:w-1/2">
               <div className="flex justify-between">
                 <div>
                   <h4 className="text-lg font-medium">
@@ -22,7 +29,7 @@ const WorkHistory = () => {
                   </h4>
                   <p className="text-workgrey">MASQ, New Zealand, Remote</p>
                 </div>
-                <div className="text-sm p-3 h-14 bg-workdateblue grid place-items-center rounded-xl ">
+                <div className="text-sm p-3 h-14 bg-workdateblue group-hover:bg-workdatedarkblue group-hover:border-2 group-hover:border-dotted group-hover:border-workdateborderblue grid place-items-center rounded-xl font-medium">
                   Sept 2022 - Present
                 </div>
               </div>
@@ -46,7 +53,7 @@ const WorkHistory = () => {
                 </p>
               </div>
             </div>
-            <div className="border-2 md:border-4 bg-white border-dotted border-workborder rounded-2xl p-3 md:w-1/2">
+            <div className="border bg-white hover:border-[#db6b8b] hover:bg-[#f9e7f2] group  border-dotted border-workborder group rounded-2xl p-3 lg:w-1/2">
               <div className="flex justify-between">
                 <div>
                   <h4 className="text-lg font-medium">
@@ -54,7 +61,7 @@ const WorkHistory = () => {
                   </h4>
                   <p className="text-workgrey">MonkeyDoo, United States,</p>
                 </div>
-                <div className="text-sm px-3 h-14 bg-workdatedarkpink grid place-items-center rounded-xl">
+                <div className="text-sm px-3 h-14 bg-workdatedarkpink group-hover:bg-[#f7d6e9] group-hover:border-2 group-hover:border-dotted group-hover:border-[#db6b8b] grid place-items-center rounded-xl font-medium">
                   March 2022 - Sept 2022
                 </div>
               </div>
@@ -78,8 +85,8 @@ const WorkHistory = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-5 mt-10">
-            <div className="border-2 md:border-4 bg-white border-dotted border-workborder p-3 rounded-2xl md:w-1/2">
+          <div className="flex flex-col lg:flex-row gap-5 mt-10">
+            <div className="border bg-white hover:bg-[#e8d9f0] group border-dotted border-workborder hover:border-[#7248db] p-3 rounded-2xl lg:w-1/2">
               <div className="flex justify-between">
                 <div>
                   <h4 className="text-lg font-medium">
@@ -87,7 +94,7 @@ const WorkHistory = () => {
                   </h4>
                   <p className="text-workgrey">Unifty, Hungary</p>
                 </div>
-                <div className="text-sm px-3 h-14 bg-[#E2C9DD] grid place-items-center rounded-xl">
+                <div className="text-sm px-3 h-14 bg-[#E2C9DD] group-hover:bg-[#d9c5e7] group-hover:border-2 group-hover:border-dotted group-hover:border-[#7248db] grid place-items-center rounded-xl font-medium">
                   Sept 2021 - March 2022
                 </div>
               </div>
@@ -109,7 +116,7 @@ const WorkHistory = () => {
                 </p>
               </div>
             </div>
-            <div className="border-2 md:border-4 bg-white border-dotted border-workborder rounded-2xl p-3 md:w-1/2">
+            <div className="border bg-white hover:border-[#D9D5C9] hover:bg-[#EFEEDD] group border-dotted border-workborder rounded-2xl p-3 lg:w-1/2">
               <div className="flex justify-between">
                 <div>
                   <h4 className="text-xl font-medium">
@@ -119,11 +126,11 @@ const WorkHistory = () => {
                     Payvest, Nigeria(biko-fund.web)
                   </p>
                 </div>
-                <div className="text-sm font-medium bg-[#EFEEDD] px-3 h-14 grid place-items-center rounded-xl">
+                <div className="text-sm font-medium bg-[#EFEEDD] group-hover:bg-[#D9D5C9] group-hover:border-2 group-hover:border-dotted group-hover:border-[#EFEEDD] px-3 h-14 grid place-items-center rounded-xl">
                   May 2021 - Sept 2021
                 </div>
               </div>
-              <div className="text-base lg:text-lg">
+              <div className="">
                 <p className="pt-5">
                   Built a crowd funding application with Vue.js and Material UI.
                   Managed the data using Vuex by working on Node.js APIs to
@@ -139,7 +146,7 @@ const WorkHistory = () => {
               </div>
             </div>
           </div>
-          <div className="border-2 md:border-4 bg-white border-dotted md:h-80 border-workborder p-3 md:p-7 rounded-2xl mt-10">
+          <div className="border bg-white border-dotted md:h-80 border-workborder p-3 md:p-7 rounded-2xl mt-10">
             <div className="flex flex-col md:flex-row gap-5">
               <div className="md:w-[30%] flex flex-row md:flex-col">
                 <div className="">
@@ -149,11 +156,11 @@ const WorkHistory = () => {
                   </p>
                 </div>
 
-                <div className="text-sm mt-5 bg-[#EFEEDD] px-3 w-fit h-14 grid place-items-center rounded-xl">
+                <div className="text-sm mt-5 bg-[#EFEEDD] px-3 w-fit h-14 grid place-items-center rounded-xl font-medium">
                   May 2017 - May 2021
                 </div>
               </div>
-              <div className="md:w-[70%] text-base lg:text-2xl">
+              <div className="md:w-[70%] text-base lg:text-xl">
                 Developed a web application to handle industrial requests as a
                 full-stack developer Integrated Rest API with the React frontend
                 Integrated PHP and MySql Rest APIs with the React Frontend and

@@ -18,9 +18,9 @@ const logos = [
 const Logos = () => {
   return (
     <>
-      <div className="text-center md:text-start">
-        <div className="md:pl-24 text-4xl flex gap-20 items-center pb-10">
-          <h2>Preferred By Industry Leaders</h2>
+      <div className="">
+        <div className="md:pl-14 lg:pl-24 text-4xl flex gap-20 items-center justify-center md:justify-normal pb-10">
+          <h2 classname="">Preferred By Industry Leaders</h2>
           <img src={curve} alt="" className="hidden md:block" />
         </div>
         <div className="w-full bg-black py-12 relative overflow-hidden">
