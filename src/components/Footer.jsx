@@ -9,19 +9,45 @@ const Footer = () => {
       backgroundImage: `url(${HeroImageFront})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
+      transition: "transform 0.6s ease",
     };
 
     const backgroundStyle2 = {
       backgroundImage: `url(${HeroImageBack})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
+      transition: "transform 0.6s ease",
+    };
+
+    const handleHover = () => {
+      const frontImage = document.querySelector(".frontImage");
+      const backImage = document.querySelector(".backImage");
+
+      // Move front image to the bottom right (where back image is)
+      frontImage.style.transform = "translate(34px, 95px)";
+
+      // Move back image to the top left (where front image is)
+      backImage.style.transform = "translate(-33px, -95px)";
+    };
+
+    const handleMouseLeave = () => {
+      const frontImage = document.querySelector(".frontImage");
+      const backImage = document.querySelector(".backImage");
+
+      // Reset positions
+      frontImage.style.transform = "translate(0, 0)";
+      backImage.style.transform = "translate(0, 0)";
     };
 
 
   return (
     <>
       <div className="h-fit md:h-[36rem] flex flex-col md:flex-row justify-center items-center gap-10 p-20 bg-gradient-to-b from-[#D6F8FF] to-[#00C8F000]">
-        <div className="hidden md:block">
+        <div
+          className="hidden md:block"
+          onMouseEnter={handleHover}
+          onMouseLeave={handleMouseLeave}
+        >
           <div className="w-52 relative">
             <div className="h-56 w-44" style={backgroundStyle}></div>
             <div
