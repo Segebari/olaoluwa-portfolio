@@ -19,24 +19,24 @@ const Footer = () => {
       transition: "transform 0.6s ease",
     };
 
-    const handleHover = () => {
-      const frontImage = document.querySelector(".frontImage");
-      const backImage = document.querySelector(".backImage");
+    const handleHoverFooter = () => {
+      const frontImageFooter = document.querySelector(".frontImageFooter");
+      const backImageFooter = document.querySelector(".backImageFooter");
 
       // Move front image to the bottom right (where back image is)
-      frontImage.style.transform = "translate(34px, 95px)";
+      frontImageFooter.style.transform = "translate(34px, 95px)";
 
       // Move back image to the top left (where front image is)
-      backImage.style.transform = "translate(-33px, -95px)";
+      backImageFooter.style.transform = "translate(-33px, -95px)";
     };
 
-    const handleMouseLeave = () => {
-      const frontImage = document.querySelector(".frontImage");
-      const backImage = document.querySelector(".backImage");
+    const handleMouseLeaveFooter = () => {
+      const frontImageFooter = document.querySelector(".frontImageFooter");
+      const backImageFooter = document.querySelector(".backImageFooter");
 
       // Reset positions
-      frontImage.style.transform = "translate(0, 0)";
-      backImage.style.transform = "translate(0, 0)";
+      frontImageFooter.style.transform = "translate(0, 0)";
+      backImageFooter.style.transform = "translate(0, 0)";
     };
 
 
@@ -45,13 +45,16 @@ const Footer = () => {
       <div className="h-fit md:h-[36rem] flex flex-col md:flex-row justify-center items-center gap-10 p-20 bg-gradient-to-b from-[#D6F8FF] to-[#00C8F000]">
         <div
           className="hidden md:block"
-          onMouseEnter={handleHover}
-          onMouseLeave={handleMouseLeave}
+          onMouseEnter={handleHoverFooter}
+          onMouseLeave={handleMouseLeaveFooter}
         >
           <div className="w-52 relative">
-            <div className="h-56 w-44" style={backgroundStyle}></div>
             <div
-              className=" h-56 w-44 absolute top-24 left-8"
+              className="h-56 w-44 frontImageFooter"
+              style={backgroundStyle}
+            ></div>
+            <div
+              className=" h-56 w-44 absolute top-24 left-8 backImageFooter"
               style={backgroundStyle2}
             ></div>
           </div>
