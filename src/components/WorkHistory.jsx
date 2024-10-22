@@ -185,7 +185,7 @@ const WorkHistory = () => {
           </div>
           <div className="border bg-white group border-dotted hover:border-[#10f500] md:h-80 border-workborder p-3 md:p-7 rounded-2xl mt-10">
             <div className="flex flex-col md:flex-row gap-5">
-              <div className="md:w-[30%] flex flex-row md:flex-col">
+              <div className="md:w-[30%] flex flex-row md:flex-col justify-between md:justify-normal">
                 <div className="mb-5">
                   <h4 className="text-lg font-medium">Full-stack Developer</h4>
                   <p className="text-workgrey">
@@ -200,7 +200,7 @@ const WorkHistory = () => {
                   <img
                     src={jcp}
                     alt=""
-                    className="w-14 hidden group-hover:block opacity-40 hover:opacity-100 hover:scale-125 transition-transform duration-300"
+                    className="w-14 hidden sm:group-hover:block opacity-40 hover:opacity-100 hover:scale-125 transition-transform duration-300"
                   />
                 </div>
               </div>

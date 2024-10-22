@@ -29,7 +29,7 @@ const Personalproject = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {/* Image */}
             <div className="md:order-1">
-              <img src={thiscreete} alt="" className="w-full" />
+              <img src={thiscreete} alt="" className="w-[70%] md:w-full" />
             </div>
 
             {/* Paragraph */}
@@ -56,7 +56,7 @@ const Personalproject = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {/* Image */}
             <div className="md:order-1">
-              <img src={zues} alt="" className="w-full" />
+              <img src={zues} alt="" className="w-[70%] md:w-full" />
             </div>
 
             {/* Paragraph */}

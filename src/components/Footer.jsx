@@ -20,7 +20,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="h-screen flex flex-col md:flex-row justify-center items-center gap-10 p-20 bg-gradient-to-b from-[#D6F8FF] to-[#00C8F000]">
+      <div className="h-fit md:h-[36rem] flex flex-col md:flex-row justify-center items-center gap-10 p-20 bg-gradient-to-b from-[#D6F8FF] to-[#00C8F000]">
         <div className="hidden md:block">
           <div className="w-52 relative">
             <div className="h-56 w-44" style={backgroundStyle}></div>
