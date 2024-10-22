@@ -46,7 +46,7 @@ const WorkHistory = () => {
                   <img
                     src={masq}
                     alt=""
-                    className="w-14 hidden group-hover:block opacity-40 hover:opacity-100 hover:scale-125 transition-transform duration-300"
+                    className="w-14 hidden md:group-hover:block opacity-40 hover:opacity-100 hover:scale-125 transition-transform duration-300"
                   />
                 </div>
 
@@ -64,7 +64,7 @@ const WorkHistory = () => {
                   <img
                     src={masq}
                     alt=""
-                    className="w-14 hidden group-hover:block opacity-40 hover:opacity-100 hover:scale-125 transition-transform duration-300"
+                    className="w-14 hidden md:group-hover:block opacity-40 hover:opacity-100 hover:scale-125 transition-transform duration-300"
                   />
                 </div>
                 <p>
@@ -86,7 +86,7 @@ const WorkHistory = () => {
                     <img
                       src={monkey}
                       alt=""
-                      className="w-7 hidden group-hover:block opacity-30 hover:opacity-100 hover:scale-125 transition-transform duration-300"
+                      className="w-7 hidden md:group-hover:block opacity-30 hover:opacity-100 hover:scale-125 transition-transform duration-300"
                     />
                   </div>
                 </div>
@@ -126,7 +126,7 @@ const WorkHistory = () => {
                     <img
                       src={unifty}
                       alt=""
-                      className="w-7 hidden group-hover:block opacity-40 hover:opacity-100 hover:scale-125 transition-transform duration-300"
+                      className="w-7 hidden md:group-hover:block opacity-40 hover:opacity-100 hover:scale-125 transition-transform duration-300"
                     />
                   </div>
                 </div>
@@ -200,7 +200,7 @@ const WorkHistory = () => {
                   <img
                     src={jcp}
                     alt=""
-                    className="w-14 hidden sm:group-hover:block opacity-40 hover:opacity-100 hover:scale-125 transition-transform duration-300"
+                    className="w-14 hidden md:group-hover:block opacity-40 hover:opacity-100 hover:scale-125 transition-transform duration-300"
                   />
                 </div>
               </div>
