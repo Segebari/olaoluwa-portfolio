@@ -19,7 +19,7 @@ const Logos = () => {
   return (
     <>
       <div className="">
-        <div className="md:pl-14 lg:pl-24 text-3xl md:text-4xl flex gap-20 items-center justify-center md:justify-normal pb-10">
+        <div className="md:pl-14 lg:pl-24 text-3xl md:text-4xl flex gap-20 text-center md:text-left items-center justify-center md:justify-normal pb-10">
           <h2 classname="">Preferred By Industry Leaders</h2>
           <img src={curve} alt="" className="hidden md:block" />
         </div>
