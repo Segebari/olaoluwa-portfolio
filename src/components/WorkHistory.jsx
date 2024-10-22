@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import WorkVector from "../assets/work-vector.svg";
 // logos
 import masq from "../assets/masq.svg";
@@ -9,6 +9,11 @@ import naffiti from "../assets/naffiti.svg";
 
 
 const WorkHistory = () => {
+
+  // const [IsVisible, setIsVisible] = useState[false];
+
+  
+
   return (
     <>
       <div className="flex flex-col pt-20 bg-worksectionbg">
@@ -34,7 +39,17 @@ const WorkHistory = () => {
                 </div>
               </div>
               <div className="pt-5">
-                <h4 className="text-workblue">DVPN Extension</h4>
+                <div className="flex items-center gap-3">
+                  <h4 className="text-workblue font-medium text-lg">
+                    DVPN Extension
+                  </h4>
+                  <img
+                    src={masq}
+                    alt=""
+                    className="w-14 hidden group-hover:block opacity-40 hover:opacity-100 hover:scale-125 transition-transform duration-300"
+                  />
+                </div>
+
                 <p className="">
                   Developed a feature-rich Chromium extension designed to
                   enhance web security and browsing experience. The extension
@@ -44,7 +59,14 @@ const WorkHistory = () => {
               </div>
 
               <div className="pt-5">
-                <h4 className="text-workblue">DVPN Extension</h4>
+                <div className="flex items-center gap-3">
+                  <h4 className="text-workblue font-medium text-lg">BROWSER</h4>
+                  <img
+                    src={masq}
+                    alt=""
+                    className="w-14 hidden group-hover:block opacity-40 hover:opacity-100 hover:scale-125 transition-transform duration-300"
+                  />
+                </div>
                 <p>
                   Developed a feature-rich Chromium extension designed to
                   enhance web security and browsing experience. The extension
@@ -59,7 +81,14 @@ const WorkHistory = () => {
                   <h4 className="text-lg font-medium">
                     Technical Lead Senior Web3 <br /> Full-stack Developer
                   </h4>
-                  <p className="text-workgrey">MonkeyDoo, United States,</p>
+                  <div className="flex items-center gap-3">
+                    <p className="text-workgrey">MonkeyDoo, United States,</p>
+                    <img
+                      src={monkey}
+                      alt=""
+                      className="w-7 hidden group-hover:block opacity-30 hover:opacity-100 hover:scale-125 transition-transform duration-300"
+                    />
+                  </div>
                 </div>
                 <div className="text-sm px-3 h-14 bg-workdatedarkpink group-hover:bg-[#f7d6e9] group-hover:border-2 group-hover:border-dotted group-hover:border-[#db6b8b] grid place-items-center rounded-xl font-medium">
                   March 2022 - Sept 2022
@@ -92,8 +121,16 @@ const WorkHistory = () => {
                   <h4 className="text-lg font-medium">
                     Web3 Frontend Developer
                   </h4>
-                  <p className="text-workgrey">Unifty, Hungary</p>
+                  <div className="flex items-center gap-3">
+                    <p className="text-workgrey">Unifty, Hungary</p>
+                    <img
+                      src={unifty}
+                      alt=""
+                      className="w-7 hidden group-hover:block opacity-40 hover:opacity-100 hover:scale-125 transition-transform duration-300"
+                    />
+                  </div>
                 </div>
+
                 <div className="text-sm px-3 h-14 bg-[#E2C9DD] group-hover:bg-[#d9c5e7] group-hover:border-2 group-hover:border-dotted group-hover:border-[#7248db] grid place-items-center rounded-xl font-medium">
                   Sept 2021 - March 2022
                 </div>
@@ -146,18 +183,25 @@ const WorkHistory = () => {
               </div>
             </div>
           </div>
-          <div className="border bg-white border-dotted md:h-80 border-workborder p-3 md:p-7 rounded-2xl mt-10">
+          <div className="border bg-white group border-dotted hover:border-[#10f500] md:h-80 border-workborder p-3 md:p-7 rounded-2xl mt-10">
             <div className="flex flex-col md:flex-row gap-5">
               <div className="md:w-[30%] flex flex-row md:flex-col">
-                <div className="">
+                <div className="mb-5">
                   <h4 className="text-lg font-medium">Full-stack Developer</h4>
                   <p className="text-workgrey">
                     JCP NETCONSULT Limited, Nigeria
                   </p>
                 </div>
 
-                <div className="text-sm mt-5 bg-[#EFEEDD] px-3 w-fit h-14 grid place-items-center rounded-xl font-medium">
-                  May 2017 - May 2021
+                <div className="flex items-center gap-3">
+                  <div className="text-sm bg-[#EFEEDD] px-3 w-fit h-14 grid place-items-center rounded-xl font-medium">
+                    May 2017 - May 2021
+                  </div>
+                  <img
+                    src={jcp}
+                    alt=""
+                    className="w-14 hidden group-hover:block opacity-40 hover:opacity-100 hover:scale-125 transition-transform duration-300"
+                  />
                 </div>
               </div>
               <div className="md:w-[70%] text-base lg:text-xl">
