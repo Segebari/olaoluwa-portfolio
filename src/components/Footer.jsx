@@ -45,7 +45,7 @@ const Footer = () => {
       </div>
       <div className="flex pb-10 text-center ">
         <div className="md:text-2xl mx-auto">
-          Olaoluwa ©2024All Rights Reserved
+          Olaoluwa ©2024. All Rights Reserved
         </div>
       </div>
     </>
