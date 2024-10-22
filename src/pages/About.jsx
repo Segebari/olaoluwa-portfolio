@@ -57,8 +57,8 @@ const About = () => {
 
         <div className="mt-10 py-28 bg-[#ffd9d9] p-4">
           <h2 className="text-2xl font-bold">Favourite Listen at the Moment</h2>
-          <div className="flex flex-col md:flex-row gap-3 pt-10 justify-center items-center">
-            <img src={fav1} alt="" className="w-84 rounded-2xl" />
+          <div className="flex flex-col md:flex-row gap-3 pt-10 justify-center items-center md:items-start">
+            <img src={fav1} alt="" className="w-84 md:h-60 rounded-2xl" />
             <img src={fav2} alt="" className="h-[16.9rem]" />
           </div>
         </div>
