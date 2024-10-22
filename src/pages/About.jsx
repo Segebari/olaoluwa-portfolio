@@ -1,17 +1,39 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 import Arsenal from "../assets/arsenal.svg";
 import fav1 from "../assets/fav1.svg";
 import fav2 from "../assets/fav2.svg";
-import Footer from '../components/Footer';
+import Footer from "../components/Footer";
 
 const About = () => {
+  
+   const [currentDateTime, setCurrentDateTime] = useState(new Date());
+
+   useEffect(() => {
+     const intervalId = setInterval(() => {
+       setCurrentDateTime(new Date());
+     }, 1000); // Update every second
+
+     return () => clearInterval(intervalId); // Clean up the interval on component unmount
+   }, []);
+
   return (
     <>
       <div className="pt-20 text-center">
         <div className="bg-white p-4 flex">
-          <div className='md:max-w-[50%] mx-auto'>
+          <div className="md:max-w-[50%] mx-auto">
             <p className="text-red-500">
-              Friday, Sep 27, 2024 <br /> 10:30:12 AM
+              {currentDateTime.toLocaleDateString("en-US", {
+                weekday: "long",
+                month: "short",
+                day: "numeric",
+                year: "numeric",
+                timeZone: "America/Los_Angeles", // Pacific Time (PT)
+              })}{" "}
+              <br />
+              {currentDateTime.toLocaleTimeString("en-US", {
+                timeZone: "America/Los_Angeles", // Pacific Time (PT)
+              })}{" "}
+              Pacific Time (PT)
             </p>
             <h2 className="text-4xl font-bold pt-3">About me</h2>
             <p className="text-[#888888] pt-5">
@@ -35,15 +57,15 @@ const About = () => {
 
         <div className="mt-10 py-28 bg-[#ffd9d9] p-4">
           <h2 className="text-2xl font-bold">Favourite Listen at the Moment</h2>
-          <div className="flex flex-col md:flex-row gap-3 pt-10 justify-center">
-            <img src={fav1} alt="" className="rounded-xl h-60" />
-            <img src={fav2} alt="" className='h-[16.9rem]' />
+          <div className="flex flex-col md:flex-row gap-3 pt-10 justify-center items-center">
+            <img src={fav1} alt="" className="w-84 rounded-2xl" />
+            <img src={fav2} alt="" className="h-[16.9rem]" />
           </div>
         </div>
         <Footer />
       </div>
     </>
   );
-}
+};
 
-export default About
+export default About;
